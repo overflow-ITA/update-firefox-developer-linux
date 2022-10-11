@@ -16,7 +16,7 @@ function installFFDE {
 function downloadAndInstallFFDE {
 	curl -o releases.txt https://download-installer.cdn.mozilla.net/pub/devedition/releases/
 	echo "Downloaded..."
-	latest=$(grep -o '[0-9][0-9]\.[0-9][a-z][0-9]' releases.txt | tail -1)  
+	latest=$(grep -o '[0-9][0-9][0-9]\.[0-9][a-z][0-9]' releases.txt | tail -1)  
 	echo "getting latest release...\nthe latest release is:\nfirefox-$latest.tar.bz2" 
 	echo "got latest version"
 	ffdFile=firefox-$latest.tar.bz2
